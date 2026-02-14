@@ -10,7 +10,7 @@ export async function signInWithGoogle(): Promise<void> {
     provider: "google",
     options: {
       redirectTo: `${
-        process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"
+        process.env.NEXT_PUBLIC_SITE_URL || "https://bookmark-app-atlas.vercel.app/"
       }/auth/callback`,
     },
   });

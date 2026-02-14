@@ -64,22 +64,22 @@ Dev Atlas is a production-ready bookmark manager built with Next.js and Supabase
 
 ## Core Features
 
-✅ **Google OAuth Only** - Streamlined signup/login via Google, no email/password required  
-✅ **Add Bookmarks** - Save URL + auto-fetched metadata (title, description)  
-✅ **Private Bookmarks** - Row Level Security ensures data isolation between users  
-✅ **Real-time Updates** - Changes sync instantly across all open tabs without page refresh  
-✅ **Delete Bookmarks** - Users can delete their own bookmarks  
-✅ **Category Organization** - Group bookmarks with 80+ custom icons and colors  
-✅ **Browser Import** - Drag & drop bookmark files with folder mapping and deduplication  
-✅ **Custom Media Override** - Replace auto-fetched images with custom ones  
-✅ **View Modes** - Toggle between card grid (2-8 columns) and compact list views  
-✅ **Grid Density** - Adjust columns per screen size (responsive 1-2 mobile, 2-8 desktop)  
-✅ **Context Menus** - Right-click for quick edit/delete/category actions  
-✅ **Bulk Operations** - Select multiple bookmarks for batch delete  
-✅ **Real-time Search** - Command palette (Cmd/Ctrl+K) to search bookmarks and navigate categories  
-✅ **Responsive Design** - Works seamlessly on desktop, tablet, and mobile  
-✅ **Performance** - Lazy loading, optimized rendering, minimal bundle  
-✅ **Dark/Light Themes** - System detection with manual override  
+**Google OAuth Only** - Streamlined signup/login via Google, no email/password required  
+**Add Bookmarks** - Save URL + auto-fetched metadata (title, description)  
+**Private Bookmarks** - Row Level Security ensures data isolation between users  
+**Real-time Updates** - Changes sync instantly across all open tabs without page refresh  
+**Delete Bookmarks** - Users can delete their own bookmarks  
+**Category Organization** - Group bookmarks with 80+ custom icons and colors  
+**Browser Import** - Drag & drop bookmark files with folder mapping and deduplication  
+**Custom Media Override** - Replace auto-fetched images with custom ones  
+**View Modes** - Toggle between card grid (2-8 columns) and compact list views  
+**Grid Density** - Adjust columns per screen size (responsive 1-2 mobile, 2-8 desktop)  
+**Context Menus** - Right-click for quick edit/delete/category actions  
+**Bulk Operations** - Select multiple bookmarks for batch delete  
+**Real-time Search** - Command palette (Cmd/Ctrl+K) to search bookmarks and navigate categories  
+**Responsive Design** - Works seamlessly on desktop, tablet, and mobile  
+**Performance** - Lazy loading, optimized rendering, minimal bundle  
+**Dark/Light Themes** - System detection with manual override  
 
 ---
 

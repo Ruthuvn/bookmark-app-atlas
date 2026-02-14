@@ -24,7 +24,7 @@ const spaceMono = localFont({
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ||
   process.env.VERCEL_URL ||
-  "http://localhost:3000";
+  "https://bookmark-app-atlas.vercel.app/";
 
 const resolvedSiteUrl = siteUrl.startsWith("http")
   ? siteUrl
