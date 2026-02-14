@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Atlas</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body class="dark">
+    <div id="app" class="popup-container">
+      <header class="header">
+        <div class="logo-container">
+          <svg
+            class="logo-icon"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5 2C4.44772 2 4 2.44772 4 3V21C4 21.8068 4.58579 22.4793 5.35317 22.4954C5.56435 22.5 5.77151 22.4554 5.96064 22.3638L12 18.9896L18.0394 22.3638C18.2285 22.4554 18.4356 22.5 18.6468 22.4954C19.4142 22.4793 20 21.8068 20 21V3C20 2.44772 19.5523 2 19 2H5ZM6 4H18V20.0918L12.5393 16.9234C12.2143 16.7493 11.7857 16.7493 11.4607 16.9234L6 20.0918V4Z"
+              fill="currentColor"
+            />
+          </svg>
+          <h1 class="logo">Dev Atlas</h1>
+        </div>
+        <div id="user-info" class="user-info"></div>
+      </header>
+
+      <main class="content">
+        <div id="loading" class="loading-state">
+          <div class="spinner"></div>
+          <p>Fetching page metadata...</p>
+        </div>
+
+        <div id="login-required" class="error-state hidden">
+          <p>Please log in to Dev Atlas to save bookmarks.</p>
+          <a
+            href="https://dev-atlas.vercel.app/login"
+            target="_blank"
+            class="button primary"
+            >Login</a
+          >
+        </div>
+
+        <div id="metadata-form" class="metadata-form hidden">
+          <div class="field">
+            <label for="url">URL</label>
+            <input type="text" id="url" readonly />
+          </div>
+
+          <div class="preview-card">
+            <img id="og-image" src="" alt="" class="og-image hidden" />
+            <div class="preview-details">
+              <div class="title-row">
+                <img id="favicon" src="" alt="" class="favicon hidden" />
+                <h2 id="title" class="title"></h2>
+              </div>
+              <p id="description" class="description"></p>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="notes">Notes</label>
+            <textarea id="notes" placeholder="Add custom notes..."></textarea>
+          </div>
+
+          <button id="save-btn" class="button primary full-width">
+            Save Bookmark
+          </button>
+        </div>
+
+        <div id="success" class="success-state hidden">
+          <div class="success-icon">✓</div>
+          <p>Saved successfully!</p>
+          <button id="close-btn" class="button secondary full-width">
+            Close
+          </button>
+        </div>
+      </main>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

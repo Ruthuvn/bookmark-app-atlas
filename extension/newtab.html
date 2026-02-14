@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Atlas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="newtab.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- Header -->
+      <header class="header">
+        <div class="header-left">
+          <div class="logo">
+            <img
+              src="icons/icon48.png"
+              alt="Dev Atlas"
+              class="logo-icon"
+              width="24"
+              height="24"
+            />
+            <span class="logo-text">Dev Atlas</span>
+          </div>
+        </div>
+
+        <div class="header-center">
+          <div class="search-container">
+            <span class="search-icon">🔍</span>
+            <input
+              type="text"
+              id="omnibox"
+              placeholder="Search your cave... (Ctrl+K)"
+              autocomplete="off"
+            />
+          </div>
+        </div>
+
+        <div class="header-right">
+          <div class="header-actions">
+            <div class="view-toggle" aria-label="Choose view">
+              <button
+                class="view-btn active"
+                data-view="card"
+                title="Card view"
+              >
+                ⊞
+              </button>
+              <button class="view-btn" data-view="list" title="List view">
+                ≡
+              </button>
+            </div>
+
+            <label class="columns-control" for="column-select">
+              <span class="columns-label">Columns</span>
+              <select id="column-select" name="column-select"></select>
+            </label>
+
+            <a
+              href="https://dev-atlas.vercel.app/dashboard"
+              target="_blank"
+              rel="noreferrer"
+              class="button ghost"
+            >
+              Open Dashboard →
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main id="main-content" class="main-content">
+        <!-- Loading State -->
+        <div id="loading-state" class="state-container">
+          <div class="spinner"></div>
+          <p>Loading your bookmarks...</p>
+        </div>
+
+        <!-- Login State -->
+        <div id="login-state" class="state-container hidden">
+          <div class="state-icon">🔐</div>
+          <h2>Welcome to Dev Atlas</h2>
+          <p>Log in to see your bookmarks here.</p>
+          <a
+            href="https://dev-atlas.vercel.app/login"
+            target="_blank"
+            class="button primary"
+          >
+            Login to Dev Atlas
+          </a>
+        </div>
+
+        <!-- Empty State -->
+        <div id="empty-state" class="state-container hidden">
+          <div class="state-icon">📚</div>
+          <h2>No bookmarks yet</h2>
+          <p>Add your first bookmark or import from your browser.</p>
+          <div class="empty-state-actions">
+            <a
+              href="https://dev-atlas.vercel.app/dashboard"
+              target="_blank"
+              class="button primary"
+            >
+              Open Dashboard
+            </a>
+            <a
+              href="https://dev-atlas.vercel.app/import-bookmarks"
+              target="_blank"
+              class="button ghost"
+              id="import-bookmarks-btn"
+            >
+              Import Bookmarks
+            </a>
+          </div>
+        </div>
+
+        <!-- Bookmarks Grid (Categories as Widgets) -->
+        <div id="bookmarks-grid" class="bookmarks-grid hidden">
+          <!-- Dynamically populated -->
+        </div>
+      </main>
+    </div>
+
+    <script src="newtab.js"></script>
+  </body>
+</html>
