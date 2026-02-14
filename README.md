@@ -1,7 +1,5 @@
 # Dev Atlas - Bookmark Manager
 
-**Your Digital Library, Perfectly Organized**
-
 Dev Atlas is a production-ready bookmark manager built with Next.js and Supabase. It solves the fundamental problem of bookmark management by centralizing all your bookmarks, fetching metadata automatically, organizing resources by category, and enabling real-time synchronization across all your devices.
 
 ---
@@ -122,7 +120,7 @@ Dev Atlas is a production-ready bookmark manager built with Next.js and Supabase
    git add .
    git commit -m "Initial commit"
    git branch -M main
-   git remote add origin https://github.com/YOUR_USERNAME/bookmark.git
+   git remote add origin https://github.com/YOUR_USERNAME/bookmark-app-atlas.git
    git push -u origin main
    ```
 
@@ -164,7 +162,7 @@ NEXT_PUBLIC_UMAMI_WEBSITE_ID=xxxxx
 
 ```bash
 # Clone and install
-git clone https://github.com/YOUR_USERNAME/bookmark.git
+git clone https://github.com/YOUR_USERNAME/bookmark-app-atlas.git
 cd bookmark
 npm install
 
