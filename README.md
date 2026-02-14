@@ -2,6 +2,13 @@
 
 Dev Atlas is a production-ready bookmark manager built with Next.js and Supabase. It solves the fundamental problem of bookmark management by centralizing all your bookmarks, fetching metadata automatically, organizing resources by category, and enabling real-time synchronization across all your devices.
 
+## 📸 Screenshots
+
+### Landing Page
+
+![Dev Atlas](./screenshot/image1.png)
+_Minimal, bold landing page with strong typography and a modern dark aesthetic_
+
 ---
 
 ## Problems Solved
