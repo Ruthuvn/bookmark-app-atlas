@@ -45,8 +45,6 @@ Dev Atlas is a production-ready bookmark manager built with Next.js and Supabase
 ### 6. **Insufficient Organization**
 **Problem:** Flat bookmark lists don't scale; nested folders are confusing.
 **Solution:** Category system with:
-- 80+ Hugeicons with custom colors
-- Collapsible category groups (state persisted per user)
 - Support for uncategorized bookmarks
 - Category-based filtering and sorting
 
@@ -212,8 +210,5 @@ npm run dev
 --soft-white: #EDEDED;         /* Dark mode text */
 ```
 
-Applied to all interactive elements, buttons, links, and highlights.
-
----
 
 
